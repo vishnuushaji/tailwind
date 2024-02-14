@@ -18,13 +18,113 @@
             </div>
         </div>
     </nav>
+    <hr>
   
 <main>
-    <div class="main bg-slate-300 py-40 pl-16 justify-around">
-    <div class="text text-6xl">
-        Products
+      <!-- Login Form -->
+  <div class="container mx-auto flex justify-center items-center h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-3xl mb-4">Login</h2>
+      <form>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700">Email</label>
+          <input type="email" id="email" name="email" class="border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md w-full">
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-gray-700">Password</label>
+          <input type="password" id="password" name="password" class="border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md w-full">
+        </div>
+        <button type="submit" class="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600">Login</button>
+      </form>
     </div>
-    <p></p>
+  </div>
+    <hr>
+
+   <!-- Signup Form -->
+   <div class="container mx-auto flex justify-center items-center h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-2xl mb-4">Signup</h2>
+      <form>
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700">Name</label>
+          <input type="text" id="name" name="name" class="border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md w-full">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700">Email</label>
+          <input type="email" id="email" name="email" class="border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md w-full">
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-gray-700">Password</label>
+          <input type="password" id="password" name="password" class="border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md w-full">
+        </div>
+        <button type="submit" class="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600">Signup</button>
+      </form>
+    </div>
+  </div>
+    <hr>
+ <!-- productlist -->
+  <div class="container mx-auto p-8">
+    <table class="table-auto w-full">
+      <thead>
+        <tr>
+          <th class="px-4 py-2">Name</th>
+          <th class="px-4 py-2">Price</th>
+          <th class="px-4 py-2">Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border px-4 py-2">Product 1</td>
+          <td class="border px-4 py-2">$10</td>
+          <td class="border px-4 py-2">5</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+    <hr>
+
+   <!-- product list card-->
+  <div class="bg-gray-100 p-8 flex flex-wrap gap-4">
+    <div class="bg-white p-4 rounded-lg shadow-md w-1/4">
+      <h3 class="text-lg font-semibold mb-2">Product 1</h3>
+      <p class="text-gray-700">30</p>
+      <p class="text-gray-700">Quantity: 2</p>
+    </div>
+  </div>
+    <hr>
+
+  <!-- addproduct-->
+  <div class="container mx-auto p-8">
+    <form class="bg-white p-6 rounded-lg shadow-md max-w-md">
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700">Product Name</label>
+        <input type="text" id="name" name="name" class="border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md w-full">
+      </div>
+      <div class="mb-4">
+        <label for="price" class="block text-gray-700">Price</label>
+        <input type="text" id="price" name="price" class="border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md w-full">
+      </div>
+      <div class="mb-4">
+        <label for="quantity" class="block text-gray-700">Quantity</label>
+        <input type="text" id="quantity" name="quantity" class="border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md w-full">
+      </div>
+      <button type="submit" class="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600">Add Product</button>
+    </form>
+  </div>
+    <hr>
+
+<!-- deleteproduct-->
+  <div class="container mx-auto p-8">
+    <form class="bg-white p-6 rounded-lg shadow-md max-w-md">
+      <div class="mb-4">
+        <label for="productId" class="block text-gray-700">Product ID</label>
+        <input type="text" id="productId" name="productId" class="border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md w-full">
+      </div>
+      <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">Delete Product</button>
+    </form>
+  </div>
+    <hr>
 
 </main>
 </body>
